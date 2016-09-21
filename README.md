@@ -1,2 +1,2 @@
 # Instruction-Counter
-MIPS program which reads and counts its own instructions by type (R, I, J) 
+This program counts the number of occurrences of R, J, and I type instructions in the program.
