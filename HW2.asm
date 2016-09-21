@@ -45,7 +45,7 @@ main:					#
 	lw 	$s3, ICount		#  Icount = 0;
 loop:					#
 	lw	$t0, 0($s0)		#  instruction = PROGRAM[i];
-	beq	$t0, 12, endloop	#  while instruction != "exit"
+	beq	$t0, 12, endloop        #  while instruction != "exit"
 	srl	$t0, $t0, 26		#	
 	beq	$t0, 0, IfR		#  if (instruction == R-type)
 	beq	$t0, 2, IfJ		#  else if (instruction == J-type)
